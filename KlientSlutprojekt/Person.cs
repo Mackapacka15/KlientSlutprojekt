@@ -2,11 +2,13 @@ using System;
 
 namespace KlientSlutprojekt
 {
-    public class Person
+    public class PersonIn
     {
         public string Name { get; set; }
 
-        public Person(string name)
+        private string key = "hejsansvejsan";
+
+        public PersonIn(string name)
         {
             Name = name;
         }
