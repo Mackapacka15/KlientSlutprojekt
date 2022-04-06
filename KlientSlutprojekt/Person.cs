@@ -6,7 +6,7 @@ namespace KlientSlutprojekt
     {
         public string Name { get; set; }
 
-        private string key = "hejsansvejsan";
+        public string Key { get; set; } = "hejsansvejsan";
 
         public PersonIn(string name)
         {
