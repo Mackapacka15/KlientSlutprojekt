@@ -37,7 +37,7 @@ namespace KlientSlutprojekt
 
             string name = firstname + "─" + lastname;
             PersonIn person = new PersonIn(name);
-            Console.WriteLine(name);
+            //Console.WriteLine(name);
 
             RestRequest getRequest = new RestRequest("Attendance");
             getRequest.AddParameter("personin", JsonSerializer.Serialize<PersonIn>(person));
@@ -46,7 +46,7 @@ namespace KlientSlutprojekt
             if (getResponse.IsSuccessful)
             {
                 Console.WriteLine("Välkommen!");
-                Console.WriteLine(getResponse.Content);
+                //Console.WriteLine(getResponse.Content);
             }
             else if ((int)getResponse.StatusCode == 400)
             {
